@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RELM Golf — Golf league management</title>
+    <meta name="description" content="RELM Golf is golf league management software for league organizers, with a mobile app for players. Launching soon.">
+    <link rel="icon" href="images/relm-mark.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #FDFCF9;
+            --pine: #0A3A27;
+            --ink: #212822;
+            --cream: #F2EDDC;
+            --tile: #F7F4E9;
+            --brass: #9C7E3C;
+            --brass-bright: #C9A961;
+            --hairline: rgba(10, 58, 39, 0.15);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "Saira Condensed", "Arial Narrow", Arial, sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.55;
+        }
+
+        .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+        header.hero {
+            background: var(--cream);
+            border-bottom: 1px solid var(--hairline);
+            text-align: center;
+            padding: 48px 0 40px;
+        }
+
+        .hero img { width: min(280px, 70vw); height: auto; }
+
+        .hero h1 {
+            margin: 20px 0 8px;
+            color: var(--pine);
+            font-size: clamp(1.9rem, 5vw, 2.6rem);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .hero p.lead { margin: 0 auto; max-width: 620px; font-size: 1.25rem; }
+
+        .badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 4px 14px;
+            border: 1px solid var(--brass);
+            border-radius: 999px;
+            color: var(--brass);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        section { padding: 44px 0; }
+
+        h2 {
+            color: var(--pine);
+            font-size: 1.6rem;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--tile);
+            border: 1px solid var(--hairline);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .card h3 { margin: 0 0 6px; color: var(--pine); font-size: 1.25rem; }
+        .card p { margin: 0; }
+
+        .about { border-top: 1px solid var(--hairline); text-align: center; }
+        .about p { max-width: 680px; margin: 0 auto 12px; }
+
+        a { color: var(--pine); font-weight: 600; }
+
+        footer {
+            background: var(--pine);
+            color: var(--cream);
+            text-align: center;
+            padding: 24px 0;
+            font-size: 1rem;
+        }
+
+        footer a { color: var(--brass-bright); }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <img src="images/relm-badge-hero.webp" alt="RELM Golf — Your league. Your RELM">
+            <h1>Golf league management, made simple</h1>
+            <p class="lead">
+                RELM Golf helps golf league organizers run their season, from sign-ups and pairings to scoring,
+                handicaps and standings. Players get a mobile app to enter scores and follow leaderboards live.
+            </p>
+            <span class="badge">Launching soon</span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrap">
+                <h2>What RELM Golf does</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>For organizers</h3>
+                        <p>Seasons, events, registrations, flights and pairings, managed in one place on the web.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Scoring and results</h3>
+                        <p>Live leaderboards, net and gross results, and season points standings, updated as scores come in.</p>
+                    </div>
+                    <div class="card">
+                        <h3>For players</h3>
+                        <p>An iPhone and Android app to register for events, enter scores on the course and check results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="wrap">
+                <h2>About us</h2>
+                <p>
+                    RELM Golf is built and operated by RELM Golf LLC, a United States company focused on software
+                    for amateur golf leagues. The service is in development and opens to leagues soon.
+                </p>
+                <p>Questions? Email us at <a href="mailto:general@relmgolf.com">general@relmgolf.com</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            &copy; 2026 RELM Golf LLC &middot; <a href="mailto:general@relmgolf.com">general@relmgolf.com</a>
+        </div>
+    </footer>
+</body>
+</html>
